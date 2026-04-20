@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ReliefOps - Root Cause Analysis (Ishikawa)</title>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+        }
+        
+        .slide-container {
+            position: relative;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            background: #f8fafc;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background Pattern -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 720px; z-index: 1;">
+<svg height="720" style="opacity: 0.03;" width="1280">
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0ea5e9" stroke-width="1"></path>
+</pattern>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Section Label -->
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 50px; width: 300px; height: 24px; z-index: 10;">
+<p style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; color: #0ea5e9; letter-spacing: 2px; text-transform: uppercase;">Analysis</p>
+</div>
+<!-- Main Title -->
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 80px; width: 800px; height: 60px; z-index: 10;">
+<p style="font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: 800; color: #1e293b; line-height: 1.2;">
+                Root Cause Analysis <span style="color: #64748b; font-weight: 600;">(Ishikawa)</span>
+</p>
+</div>
+<!-- Subtitle -->
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 140px; width: 800px; height: 30px; z-index: 10;">
+<p style="font-family: 'Inter', sans-serif; font-size: 18px; color: #475569; font-weight: 500;">
+                Drivers of information chaos during humanitarian disaster response.
+            </p>
+</div>
+<!-- Fishbone SVG Skeleton -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 720px; z-index: 1;">
+<svg height="720" width="1280">
+<!-- Spine -->
+<line stroke="#94a3b8" stroke-linecap="round" stroke-width="6" x1="80" x2="880" y1="430" y2="430"></line>
+<path d="M 860 415 L 880 430 L 860 445" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+<!-- Top Branches -->
+<line stroke="#cbd5e1" stroke-linecap="round" stroke-width="4" x1="190" x2="300" y1="340" y2="430"></line>
+<line stroke="#cbd5e1" stroke-linecap="round" stroke-width="4" x1="450" x2="560" y1="340" y2="430"></line>
+<line stroke="#cbd5e1" stroke-linecap="round" stroke-width="4" x1="710" x2="820" y1="340" y2="430"></line>
+<!-- Bottom Branches -->
+<line stroke="#cbd5e1" stroke-linecap="round" stroke-width="4" x1="190" x2="300" y1="520" y2="430"></line>
+<line stroke="#cbd5e1" stroke-linecap="round" stroke-width="4" x1="450" x2="560" y1="520" y2="430"></line>
+<line stroke="#cbd5e1" stroke-linecap="round" stroke-width="4" x1="710" x2="820" y1="520" y2="430"></line>
+</svg>
+</div>
+<!-- ================= TOP ROW ================= -->
+<!-- Card 1: Method -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 220px; width: 220px; height: 135px; background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); z-index: 5;"></div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 95px; top: 238px; width: 24px; height: 24px; color: #0ea5e9; font-size: 20px; text-align: center; line-height: 24px; z-index: 10;">
+<i class="fas fa-project-diagram"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 95px; top: 238px; width: 190px; height: 110px; z-index: 10;">
+<p style="margin-left: 32px; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #1e293b; line-height: 24px;">Method</p>
+<p style="margin-top: 8px; font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b; line-height: 1.5; padding-right: 5px;">No standard request/update workflow; ad-hoc steps.</p>
+</div>
+<!-- Card 2: Machine -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 340px; top: 220px; width: 220px; height: 135px; background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); z-index: 5;"></div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 355px; top: 238px; width: 24px; height: 24px; color: #0ea5e9; font-size: 20px; text-align: center; line-height: 24px; z-index: 10;">
+<i class="fas fa-laptop"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 355px; top: 238px; width: 190px; height: 110px; z-index: 10;">
+<p style="margin-left: 32px; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #1e293b; line-height: 24px;">Machine</p>
+<p style="margin-top: 8px; font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b; line-height: 1.5; padding-right: 5px;">Disparate tools; no dedicated system; patchy connectivity.</p>
+</div>
+<!-- Card 3: Measurement -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 600px; top: 220px; width: 220px; height: 135px; background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); z-index: 5;"></div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 615px; top: 238px; width: 24px; height: 24px; color: #0ea5e9; font-size: 20px; text-align: center; line-height: 24px; z-index: 10;">
+<i class="fas fa-chart-bar"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 615px; top: 238px; width: 190px; height: 110px; z-index: 10;">
+<p style="margin-left: 32px; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #1e293b; line-height: 24px;">Measurement</p>
+<p style="margin-top: 8px; font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b; line-height: 1.5; padding-right: 5px;">No timestamps/SLA; stale or conflicting data.</p>
+</div>
+<!-- ================= BOTTOM ROW ================= -->
+<!-- Card 4: Workforce -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 505px; width: 220px; height: 135px; background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); z-index: 5;"></div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 95px; top: 523px; width: 24px; height: 24px; color: #0ea5e9; font-size: 20px; text-align: center; line-height: 24px; z-index: 10;">
+<i class="fas fa-users"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 95px; top: 523px; width: 190px; height: 110px; z-index: 10;">
+<p style="margin-left: 32px; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #1e293b; line-height: 24px;">Workforce</p>
+<p style="margin-top: 8px; font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b; line-height: 1.5; padding-right: 5px;">Overloaded staff/volunteers; inconsistent roles/training.</p>
+</div>
+<!-- Card 5: Environment -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 340px; top: 505px; width: 220px; height: 135px; background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); z-index: 5;"></div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 355px; top: 523px; width: 24px; height: 24px; color: #0ea5e9; font-size: 20px; text-align: center; line-height: 24px; z-index: 10;">
+<i class="fas fa-cloud-showers-heavy"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 355px; top: 523px; width: 190px; height: 110px; z-index: 10;">
+<p style="margin-left: 32px; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #1e293b; line-height: 24px;">Environment</p>
+<p style="margin-top: 8px; font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b; line-height: 1.5; padding-right: 5px;">Damaged infrastructure; uncertainty; time pressure.</p>
+</div>
+<!-- Card 6: Materials -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 600px; top: 505px; width: 220px; height: 135px; background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); z-index: 5;"></div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 615px; top: 523px; width: 24px; height: 24px; color: #0ea5e9; font-size: 20px; text-align: center; line-height: 24px; z-index: 10;">
+<i class="fas fa-box-open"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 615px; top: 523px; width: 190px; height: 110px; z-index: 10;">
+<p style="margin-left: 32px; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #1e293b; line-height: 24px;">Materials</p>
+<p style="margin-top: 8px; font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b; line-height: 1.5; padding-right: 5px;">Vague item specs; donations without proper context.</p>
+</div>
+<!-- ================= HEAD / CORE PROBLEM ================= -->
+<!-- Head Box -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 880px; top: 370px; width: 320px; height: 130px; background: #fff7ed; border-radius: 12px; border: 1px solid #ffedd5; border-left: 6px solid #f97316; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); z-index: 5;"></div>
+<!-- Head Icon -->
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 910px; top: 415px; width: 40px; height: 40px; color: #f97316; font-size: 32px; text-align: center; line-height: 40px; z-index: 10;">
+<i class="fas fa-exclamation-circle"></i>
+</div>
+<!-- Head Text -->
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 970px; top: 405px; width: 210px; height: 80px; z-index: 10;">
+<p style="font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: #c2410c; line-height: 1.2;">Information<br/>Chaos</p>
+</div>
+</div>
+</body>
+</html>
