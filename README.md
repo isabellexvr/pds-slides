@@ -14,12 +14,13 @@ Roteiro cronometrado pra ~4min50s, deixando ~25s de folga pra respiros e transi�
 |---|---|---|---|
 | Abertura | 1 | 0:00 – 0:15 | 15s |
 | Contexto do problema | 2–3 | 0:15 – 0:45 | 30s |
-| Recorte (Ishikawa) | 4–5 | 0:45 – 1:15 | 30s |
-| Problema específico | 6–7 | 1:15 – 1:45 | 30s |
-| Solução | 8–9 | 1:45 – 2:30 | 45s |
-| Funcionalidades / usuários | 10–11 | 2:30 – 3:15 | 45s |
-| Inovação | 12–13 | 3:15 – 4:00 | 45s |
-| Impacto / MVP | 14 | 4:00 – 4:30 | 30s |
+| Recorte (Ishikawa) | 4–5 | 0:45 – 1:10 | 25s |
+| Problema específico | 6–7 | 1:10 – 1:40 | 30s |
+| Solução | 8–9 | 1:40 – 2:25 | 45s |
+| Funcionalidades / usuários | 10–11 | 2:25 – 3:05 | 40s |
+| UI Preview | 11b | 3:05 – 3:25 | 20s |
+| Inovação | 12–13 | 3:25 – 4:05 | 40s |
+| Impacto / MVP | 14 | 4:05 – 4:30 | 25s |
 | Fechamento | 15 | 4:30 – 4:50 | 20s |
 
 ---
@@ -34,29 +35,33 @@ Roteiro cronometrado pra ~4min50s, deixando ~25s de folga pra respiros e transi�
 
 > "Durante uma crise humanitária — enchente, incêndio, deslizamento — centenas de abrigos abrem em poucas horas. Cada um com uma necessidade diferente: um precisa de água, outro de fralda, outro já está com comida sobrando e precisando de colchão. E essa necessidade *muda a cada hora*. O problema é que ninguém sabe, em tempo real, o que cada abrigo realmente precisa agora."
 
-### [Slides 4–5 — Ishikawa / recorte | 0:45–1:15]
+### [Slides 4–5 — Ishikawa / recorte | 0:45–1:10]
 
 > "A gente aplicou uma análise de Ishikawa e mapeou as causas: falta de método, falta de máquina, falta de gente capacitada, falta de processo. Podia atacar tudo, mas seria raso. Então a gente fez um recorte honesto: vamos resolver *método e máquina* — ou seja, o **workflow** e a **ferramenta** que sustenta esse workflow."
 
-### [Slides 6–7 — Problema específico | 1:15–1:45]
+### [Slides 6–7 — Problema específico | 1:10–1:40]
 
 > "O problema específico é esse: hoje, não existe um fluxo confiável pra atualizar as necessidades dos abrigos durante o desastre. O que existe são planilhas paralelas, grupos de WhatsApp, ligações, e-mails. Ninguém sabe qual versão é a atualizada. A informação chega com 3, 4 dias de atraso. E no meio do caos, quem paga o preço é quem mais precisa."
 
-### [Slides 8–9 — Solução | 1:45–2:30]
+### [Slides 8–9 — Solução | 1:40–2:25]
 
 > "A nossa proposta é o **{projectName}** — uma plataforma de *governança da informação* pra resposta humanitária. Não é mais uma ferramenta de doação. Não é um marketplace. É o lugar onde a necessidade do abrigo vira um dado confiável, carimbado, com hora e responsável. Abrigos verificados publicam o que precisam; atualizam em tempo real; e qualquer pessoa — doador, ONG, Defesa Civil — vê a mesma verdade, ao mesmo tempo."
 
-### [Slides 10–11 — Funcionalidades / usuários | 2:30–3:15]
+### [Slides 10–11 — Funcionalidades / usuários | 2:25–3:05]
 
-> "Três perfis: **Defesa Civil** abre a crise e coordena; **abrigos verificados** publicam e atualizam necessidades; **doadores e ONGs** enxergam tudo em tempo real, num mapa. As funcionalidades principais: gestão de crises, contas verificadas com controle de acesso, dashboard em tempo real, sistema de prioridades — urgente, necessário, suficiente — lembretes automáticos de atualização, e visualização geográfica. Tudo pensado pra funcionar em contexto de baixa conectividade."
+> "Três perfis: **Defesa Civil** abre a crise e coordena; **abrigos verificados** publicam e atualizam necessidades; **doadores e ONGs** enxergam tudo em tempo real, num mapa. As funcionalidades principais: gestão de crises, contas verificadas, dashboard em tempo real, sistema de prioridades — urgente, necessário, suficiente — e visualização geográfica. Tudo pensado pra funcionar em contexto de baixa conectividade."
 
-### [Slides 12–13 — Inovação | 3:15–4:00]
+### [Slide 11b — UI Preview | 3:05–3:25]
+
+> "E na prática, é isso que todo mundo enxerga: um mapa com os abrigos marcados por prioridade — vermelho pra urgente, laranja pra necessário, verde pra suficiente — e um feed que atualiza em tempo real, mostrando quem publicou, quando publicou, e o quê."
+
+### [Slides 12–13 — Inovação | 3:25–4:05]
 
 > "O que torna isso diferente? A gente não está inventando uma planilha bonita. A gente está mudando o paradigma: de *coleta de dados* pra *governança da informação*. Isso significa workflow padronizado e auditável, atualizações verificadas em até dois minutos, e uma única fonte de verdade que todo mundo confia. Na prática, é a diferença entre o caminhão de doação chegar no abrigo certo ou girar três dias procurando quem precisa."
 
-### [Slide 14 — Impacto / MVP | 4:00–4:30]
+### [Slide 14 — Impacto / MVP | 4:05–4:30]
 
-> "Nosso escopo pros próximos 4 a 5 meses é entregar um MVP funcional: cadastro e verificação de abrigos, publicação e atualização de necessidades, dashboard público, e mapa. Arquitetura modular, stack leve, pensada pra rodar em qualquer lugar — inclusive em prefeitura de cidade pequena."
+> "Nosso escopo pros próximos meses é entregar um MVP funcional: cadastro e verificação de abrigos, publicação de necessidades em tempo real, dashboard público e mapa. Stack leve, pensada pra rodar em qualquer lugar — inclusive em prefeitura de cidade pequena."
 
 ### [Slide 15 — Fechamento | 4:30–4:50]
 
