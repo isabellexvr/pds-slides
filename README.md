@@ -28,7 +28,7 @@ Roteiro cronometrado pra ~4min50s, deixando ~25s de folga pra respiros e transi�
 
 ### [Slide 1 — Capa | 0:00–0:15]
 
-> "Quando um desastre acontece, a ajuda chega. Mas chega *certo*? Na hora *certa*? No lugar *certo*? A gente é o Grupo 1, da UFAL, e passou o semestre inteiro investigando uma pergunta que parece simples — mas não é."
+> "Quando um desastre acontece, a ajuda chega. Mas chega *certo*? Na hora *certa*? No lugar *certo*? A gente é o Grupo 1, da UFAL, e passou a AB1 inteira investigando uma pergunta que parece simples — mas não é."
 
 ### [Slides 2–3 — Contexto do problema | 0:15–0:45]
 
