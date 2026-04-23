@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>ReliefOps - Title Slide</title>
+    <title>{projectName} - Title Slide</title>
     <link
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
       rel="stylesheet"
@@ -66,13 +66,28 @@
         font-weight: 500;
       }
 
-      .main-title {
+      .project-name {
         font-family: "Montserrat", sans-serif;
-        font-size: 48px;
+        font-size: 92px;
         font-weight: 800;
         color: #1e293b;
-        line-height: 1.15;
-        letter-spacing: -1.5px;
+        line-height: 1;
+        letter-spacing: -3px;
+      }
+
+      .project-tagline {
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #334155;
+        line-height: 1.35;
+        margin-top: 16px;
+        letter-spacing: -0.2px;
+      }
+
+      .tagline-highlight {
+        color: #0ea5e9;
+        font-weight: 500;
       }
 
       .title-highlight {
@@ -169,15 +184,17 @@
       }
 
       .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         height: 60px;
         background: white;
         border-top: 1px solid #e2e8f0;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 80px;
-        margin-top: auto;
-        width: 100%;
+        padding: 0 40px;
       }
 
       .footer-item {
@@ -249,19 +266,9 @@
           <i class="fas fa-hands-helping"></i>
         </div>
         <div>
-          <div class="brand-name">ReliefOps</div>
+          <div class="brand-name">{projectName}</div>
           <div class="brand-tagline">Real-Time Needs Coordination</div>
         </div>
-      </div>
-      <!-- Status Badge -->
-      <div
-        class="status-badge"
-        data-object="true"
-        data-object-type="textbox"
-        style="position: absolute; left: 1010px; top: 50px; width: 140px"
-      >
-        <div class="status-dot"></div>
-        <span>Active Project</span>
       </div>
       <!-- Visual Section (Moved down to avoid overlap) -->
       <div
@@ -297,12 +304,14 @@
         data-object-type="textbox"
         style="position: absolute; left: 80px; top: 130px; width: 700px"
       >
-        <div class="main-title">
-          <span class="title-highlight">ReliefOps</span>: Real-Time Needs<br />
-          Coordination in
-          <span class="title-highlight">Humanitarian Crises</span>
+        <div class="project-name">
+          <span class="title-highlight">{projectName}</span>
         </div>
-        <div class="subtitle" style="margin-top: 15px">
+        <div class="project-tagline">
+          Real-Time Needs Coordination in
+          <span class="tagline-highlight">Humanitarian Crises</span>
+        </div>
+        <div class="subtitle" style="margin-top: 22px">
           Improving
           <span class="subtitle-accent">information governance</span> during
           disaster response<br />

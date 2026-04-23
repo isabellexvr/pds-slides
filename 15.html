@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ReliefOps - Closing Slide</title>
+<title>{projectName} - Closing Slide</title>
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
 <style>
         @import url("https://www.genspark.ai/image_placeholder.png");
@@ -133,29 +133,43 @@
         }
         
         .footer {
-            height: 80px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
             background: white;
             border-top: 1px solid #e2e8f0;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 80px;
-            margin-top: auto;
-            width: 100%;
+            padding: 0 40px;
         }
-        
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+        }
+
         .footer-item {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 15px;
-            color: #475569;
-            font-weight: 500;
+            gap: 8px;
+            font-size: 14px;
+            color: #64748b;
         }
-        
+
         .footer-item i {
             color: #0ea5e9;
-            width: 20px;
+        }
+
+        .footer-right {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .footer-right i {
+            color: #0ea5e9;
         }
         
         .status-badge {
@@ -194,14 +208,9 @@
 <i class="fas fa-hands-helping"></i>
 </div>
 <div>
-<div class="brand-name">ReliefOps</div>
+<div class="brand-name">{projectName}</div>
 <div class="brand-tagline">Real-Time Needs Coordination</div>
 </div>
-</div>
-<!-- Status Badge -->
-<div class="status-badge" data-object="true" data-object-type="textbox" style="position: absolute; left: 950px; top: 40px; width: 180px; height: 44px;">
-<div class="status-dot"></div>
-<span>Active Project</span>
 </div>
 <!-- Main Content -->
 <div class="main-content" data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 140px; width: 1120px; height: 480px;">
@@ -215,7 +224,7 @@
 <i class="fas fa-lightbulb"></i>
 </div>
 <div style="text-align: left;">
-<div style="font-size: 22px; font-weight: 700; color: #1e293b; margin-bottom: 6px;">ReliefOps helps help reach the right place, at the right time.</div>
+<div style="font-size: 22px; font-weight: 700; color: #1e293b; margin-bottom: 6px;">{projectName} helps help reach the right place, at the right time.</div>
 <div style="font-size: 17px; color: #64748b; font-weight: 400;">Transforming scattered crisis data into a trusted real-time source of truth.</div>
 </div>
 </div>
@@ -240,19 +249,19 @@
 </div>
 <!-- Footer -->
 <div class="footer">
-<div class="footer-left" style="display: flex;">
+<div class="footer-left">
 <div class="footer-item">
 <i class="fas fa-graduation-cap"></i>
-<span>Course: Tech for Peace</span>
+<span>Subject: Tech for Peace</span>
 </div>
-<div class="footer-item" style="margin-left: 40px;">
+<div class="footer-item" style="margin-left: 30px">
 <i class="fas fa-users"></i>
-<span>Team Project</span>
+<span>Group 1</span>
 </div>
 </div>
-<div class="footer-right" style="font-size: 15px; color: #64748b; font-weight: 500;">
-<i class="fas fa-university" style="color: #0ea5e9; margin-right: 8px;"></i> University Project Presentation
-        </div>
+<div class="footer-right">
+<i class="fas fa-university"></i> Universidade Federal de Alagoas
+</div>
 </div>
 </div>
 </body>
