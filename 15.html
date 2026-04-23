@@ -1,268 +1,337 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>{projectName} - Closing Slide</title>
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
-<style>
-        @import url("https://www.genspark.ai/image_placeholder.png");
-        
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            font-family: 'Inter', sans-serif;
-            background: #f8fafc;
-        }
-        
-        .slide-container {
-            position: relative;
-            width: 1280px;
-            height: 720px;
-            overflow: hidden;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .bg-pattern {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 1280px;
-            height: 720px;
-            opacity: 0.1;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2394a3b8' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-        
-        .logo-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 28px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        
-        .brand-name {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 32px;
-            font-weight: 700;
-            color: #1e293b;
-            letter-spacing: -0.5px;
-        }
-        
-        .brand-tagline {
-            font-size: 16px;
-            color: #64748b;
-            font-weight: 500;
-        }
-        
-        .main-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 52px;
-            font-weight: 800;
-            color: #1e293b;
-            line-height: 1.15;
-            letter-spacing: -1.5px;
-            text-align: center;
-        }
-        
-        .title-highlight {
-            color: #0ea5e9;
-        }
-        
-        .closing-statement {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 16px;
-            border-left: 6px solid #0ea5e9;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-        }
-        
-        .action-area {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-        }
-        
-        .action-card {
-            background: white;
-            border-radius: 16px;
-            padding: 30px 20px;
-            width: 320px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e2e8f0;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 160px;
-        }
-        
-        .action-icon {
-            width: 50px;
-            height: 50px;
-            background: #f0f9ff;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #0ea5e9;
-            font-size: 24px;
-            margin: 0 auto 15px;
-        }
-        
-        .action-text {
-            font-size: 18px;
-            color: #1e293b;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        
-        .action-desc {
-            font-size: 14px;
-            color: #64748b;
-            line-height: 1.4;
-        }
-        
-        .footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
-            background: white;
-            border-top: 1px solid #e2e8f0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 40px;
-        }
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{projectName} - Closing Slide</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://www.genspark.ai/image_placeholder.png");
 
-        .footer-left {
-            display: flex;
-            align-items: center;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+        background: #f8fafc;
+      }
 
-        .footer-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            color: #64748b;
-        }
+      .slide-container {
+        position: relative;
+        width: 1280px;
+        height: 720px;
+        overflow: hidden;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        display: flex;
+        flex-direction: column;
+      }
 
-        .footer-item i {
-            color: #0ea5e9;
-        }
+      .bg-pattern {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1280px;
+        height: 720px;
+        opacity: 0.1;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2394a3b8' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
 
-        .footer-right {
-            font-size: 14px;
-            color: #64748b;
-        }
+      .logo-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 28px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
 
-        .footer-right i {
-            color: #0ea5e9;
+      .brand-name {
+        font-family: "Montserrat", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: #1e293b;
+        letter-spacing: -0.5px;
+      }
+
+      .brand-tagline {
+        font-size: 16px;
+        color: #64748b;
+        font-weight: 500;
+      }
+
+      .main-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 52px;
+        font-weight: 800;
+        color: #1e293b;
+        line-height: 1.15;
+        letter-spacing: -1.5px;
+        text-align: center;
+      }
+
+      .title-highlight {
+        color: #0ea5e9;
+      }
+
+      .closing-statement {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 16px;
+        border-left: 6px solid #0ea5e9;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      }
+
+      .action-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .action-card {
+        background: white;
+        border-radius: 16px;
+        padding: 30px 20px;
+        width: 320px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e2e8f0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 160px;
+      }
+
+      .action-icon {
+        width: 50px;
+        height: 50px;
+        background: #f0f9ff;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0ea5e9;
+        font-size: 24px;
+        margin: 0 auto 15px;
+      }
+
+      .action-text {
+        font-size: 18px;
+        color: #1e293b;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .action-desc {
+        font-size: 14px;
+        color: #64748b;
+        line-height: 1.4;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: white;
+        border-top: 1px solid #e2e8f0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+      }
+
+      .footer-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        color: #64748b;
+      }
+
+      .footer-item i {
+        color: #0ea5e9;
+      }
+
+      .footer-right {
+        font-size: 14px;
+        color: #64748b;
+      }
+
+      .footer-right i {
+        color: #0ea5e9;
+      }
+
+      .status-badge {
+        background: #dcfce7;
+        color: #166534;
+        padding: 10px 20px;
+        border-radius: 24px;
+        font-size: 15px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .status-dot {
+        width: 10px;
+        height: 10px;
+        background: #22c55e;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
         }
-        
-        .status-badge {
-            background: #dcfce7;
-            color: #166534;
-            padding: 10px 20px;
-            border-radius: 24px;
-            font-size: 15px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+        50% {
+          opacity: 0.6;
+          transform: scale(1.2);
         }
-        
-        .status-dot {
-            width: 10px;
-            height: 10px;
-            background: #22c55e;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.2); }
-        }
+      }
     </style>
-</head>
-<body>
-<div class="slide-container">
-<div class="bg-pattern"></div>
-<!-- Brand Section -->
-<div class="brand-section" data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 40px; display: flex; align-items: center; gap: 20px; width: 450px; height: 70px;">
-<div class="logo-icon">
-<i class="fas fa-hands-helping"></i>
-</div>
-<div>
-<div class="brand-name">{projectName}</div>
-<div class="brand-tagline">Real-Time Needs Coordination</div>
-</div>
-</div>
-<!-- Main Content -->
-<div class="main-content" data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 140px; width: 1120px; height: 480px;">
-<div class="main-title">
-<span class="title-highlight">Technology cannot stop disasters.</span><br/>
-            But it can stop <span class="title-highlight">information chaos.</span>
-</div>
-<div class="closing-statement" style="margin-top: 50px; padding: 25px 45px;">
-<div style="display: flex; align-items: center; justify-content: center; gap: 30px;">
-<div style="font-size: 44px; color: #0ea5e9; flex-shrink: 0; width: 60px; display: flex; justify-content: center;">
-<i class="fas fa-lightbulb"></i>
-</div>
-<div style="text-align: left;">
-<div style="font-size: 22px; font-weight: 700; color: #1e293b; margin-bottom: 6px;">{projectName} helps help reach the right place, at the right time.</div>
-<div style="font-size: 17px; color: #64748b; font-weight: 400;">Transforming scattered crisis data into a trusted real-time source of truth.</div>
-</div>
-</div>
-</div>
-<div class="action-area" style="margin-top: 50px;">
-<div class="action-card">
-<div class="action-icon"><i class="fas fa-map-marker-alt"></i></div>
-<div class="action-text">Real-Time Tracking</div>
-<div class="action-desc">Live updates on shelter needs</div>
-</div>
-<div class="action-card">
-<div class="action-icon"><i class="fas fa-users"></i></div>
-<div class="action-text">Multi-Stakeholder</div>
-<div class="action-desc">Coordinated response platform</div>
-</div>
-<div class="action-card">
-<div class="action-icon"><i class="fas fa-shield-alt"></i></div>
-<div class="action-text">Verified Data</div>
-<div class="action-desc">Trust &amp; validation system</div>
-</div>
-</div>
-</div>
-<!-- Footer -->
-<div class="footer">
-<div class="footer-left">
-<div class="footer-item">
-<i class="fas fa-graduation-cap"></i>
-<span>Subject: Tech for Peace</span>
-</div>
-<div class="footer-item" style="margin-left: 30px">
-<i class="fas fa-users"></i>
-<span>Group 1</span>
-</div>
-</div>
-<div class="footer-right">
-<i class="fas fa-university"></i> Universidade Federal de Alagoas
-</div>
-</div>
-</div>
-</body>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="bg-pattern"></div>
+      <!-- Brand Section -->
+      <div
+        class="brand-section"
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 80px;
+          top: 40px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          width: 450px;
+          height: 70px;
+        "
+      >
+        <div class="logo-icon">
+          <i class="fas fa-hands-helping"></i>
+        </div>
+        <div>
+          <div class="brand-name">{projectName}</div>
+          <div class="brand-tagline">Real-Time Needs Coordination</div>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div
+        class="main-content"
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 80px;
+          top: 140px;
+          width: 1120px;
+          height: 480px;
+        "
+      >
+        <div class="main-title">
+          <span class="title-highlight">Technology cannot stop disasters.</span
+          ><br />
+          But it can stop
+          <span class="title-highlight">information chaos.</span>
+        </div>
+        <div
+          class="closing-statement"
+          style="margin-top: 50px; padding: 25px 45px"
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 30px;
+            "
+          >
+            <div
+              style="
+                font-size: 44px;
+                color: #0ea5e9;
+                flex-shrink: 0;
+                width: 60px;
+                display: flex;
+                justify-content: center;
+              "
+            >
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <div style="text-align: left">
+              <div
+                style="
+                  font-size: 22px;
+                  font-weight: 700;
+                  color: #1e293b;
+                  margin-bottom: 6px;
+                "
+              >
+                {projectName} helps help reach the right place, at the right
+                time.
+              </div>
+              <div style="font-size: 17px; color: #64748b; font-weight: 400">
+                Transforming scattered crisis data into a trusted real-time
+                source of truth.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action-area" style="margin-top: 50px">
+          <div class="action-card">
+            <div class="action-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="action-text">Real-Time Tracking</div>
+            <div class="action-desc">Live updates on shelter needs</div>
+          </div>
+          <div class="action-card">
+            <div class="action-icon"><i class="fas fa-users"></i></div>
+            <div class="action-text">Multi-Stakeholder</div>
+            <div class="action-desc">Coordinated response platform</div>
+          </div>
+          <div class="action-card">
+            <div class="action-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="action-text">Verified Data</div>
+            <div class="action-desc">Trust &amp; validation system</div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-left">
+          <div class="footer-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Subject: Tech for Peace</span>
+          </div>
+          <div class="footer-item" style="margin-left: 30px">
+            <i class="fas fa-users"></i>
+            <span>Group 1</span>
+          </div>
+        </div>
+        <div class="footer-right">
+          <i class="fas fa-university"></i> Universidade Federal de Alagoas
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

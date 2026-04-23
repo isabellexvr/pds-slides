@@ -1,22 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>{projectName} - The Solution</title>
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<style>
-    body {
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{projectName} - The Solution</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         background: #f8fafc;
-    }
-    
-    .slide-container {
+      }
+
+      .slide-container {
         position: relative;
         width: 1280px;
         height: 720px;
@@ -24,135 +30,663 @@
         background: #f8fafc;
         display: flex;
         flex-direction: column;
-    }
+      }
 
-    p {
+      p {
         margin: 0;
-    }
-</style>
-</head>
-<body>
-<div class="slide-container">
-<!-- Background Pattern -->
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 720px; z-index: 1;">
-<svg height="720" style="opacity: 0.05;" width="1280">
-<pattern height="40" id="dots" patternunits="userSpaceOnUse" width="40" x="0" y="0">
-<circle cx="2" cy="2" fill="#0ea5e9" r="2"></circle>
-</pattern>
-<rect fill="url(#dots)" height="100%" width="100%"></rect>
-</svg>
-</div>
-<!-- Section Label -->
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 60px; width: 200px; z-index: 10;">
-<p style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; color: #0ea5e9; letter-spacing: 2px; text-transform: uppercase;">The Solution</p>
-</div>
-<!-- Main Title -->
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 100px; width: 1120px; height: 130px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: 800; color: #1e293b; line-height: 1.2; margin-bottom: 8px;">
-    {projectName} — <span style="color: #0ea5e9;">Real-Time Needs Management System</span>
-</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 18px; color: #64748b; line-height: 1.5;">
-    A platform that creates a <span style="color: #f97316; font-weight: 600;">trusted workflow</span> for shelters to publish and update their needs during crises.
-</p>
-</div>
-<!-- Core Definition Box -->
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 260px; width: 600px; height: 190px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); z-index: 1;"></div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 105px; top: 285px; width: 550px; height: 140px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 700; color: #1e293b; margin-bottom: 16px;">
-<i class="fas fa-check-circle" style="color: #0ea5e9; margin-right: 8px;"></i>
-    Core Definition
-</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 15px; color: #475569; line-height: 1.6; margin-bottom: 12px;">
-    A platform that creates a <span style="background: #dbeafe; padding: 2px 6px; border-radius: 4px; color: #0ea5e9; font-weight: 600;">trusted workflow</span> for shelters to publish and update their needs during crises.
-</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b; line-height: 1.5;">
-    Built for <span style="color: #f97316; font-weight: 500;">low-connectivity, high-pressure</span> contexts with standardized, auditable processes.
-</p>
-</div>
-<!-- Key Value Propositions -->
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 700px; top: 260px; width: 500px; height: 190px; background: #f0f9ff; border-radius: 16px; border: 1px solid #e2e8f0; z-index: 1;"></div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 725px; top: 285px; width: 450px; height: 140px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 700; color: #1e293b; margin-bottom: 16px;">
-<i class="fas fa-star" style="color: #f97316; margin-right: 8px;"></i>
-    Key Value Propositions
-</p>
-<div style="display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; align-items: center; gap: 10px;">
-<div style="width: 8px; height: 8px; background: #0ea5e9; border-radius: 50%;"></div>
-<span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #475569;">Standardized, auditable process</span>
-</div>
-<div style="display: flex; align-items: center; gap: 10px;">
-<div style="width: 8px; height: 8px; background: #0ea5e9; border-radius: 50%;"></div>
-<span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #475569;">Verified updates and roles</span>
-</div>
-<div style="display: flex; align-items: center; gap: 10px;">
-<div style="width: 8px; height: 8px; background: #0ea5e9; border-radius: 50%;"></div>
-<span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #475569;">Real-time public visibility</span>
-</div>
-</div>
-</div>
-<!-- Feature Grid -->
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 445px; width: 1120px; height: 215px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); z-index: 1;"></div>
-<!-- Feature 1 -->
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 110px; top: 470px; width: 56px; height: 56px; background: #f0f9ff; border-radius: 12px; text-align: center; line-height: 56px; font-size: 24px; color: #0ea5e9; z-index: 10;">
-<i class="fas fa-building"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 180px; top: 470px; width: 200px; height: 80px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 4px;">Crisis Management</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b;">Create and manage crisis events</p>
-</div>
-<!-- Feature 2 -->
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 420px; top: 470px; width: 56px; height: 56px; background: #fff7ed; border-radius: 12px; text-align: center; line-height: 56px; font-size: 24px; color: #f97316; z-index: 10;">
-<i class="fas fa-users"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 490px; top: 470px; width: 200px; height: 80px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 4px;">Verified Organizations</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b;">Trusted shelter accounts</p>
-</div>
-<!-- Feature 3 -->
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 740px; top: 470px; width: 56px; height: 56px; background: #fef3c7; border-radius: 12px; text-align: center; line-height: 56px; font-size: 24px; color: #f59e0b; z-index: 10;">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 810px; top: 470px; width: 210px; height: 80px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 4px;">Map Visualization</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b;">Real-time needs mapping</p>
-</div>
-<!-- Feature 4 -->
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 110px; top: 570px; width: 56px; height: 56px; background: #dcfce7; border-radius: 12px; text-align: center; line-height: 56px; font-size: 24px; color: #22c55e; z-index: 10;">
-<i class="fas fa-clock"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 180px; top: 570px; width: 200px; height: 80px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 4px;">Update Reminders</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b;">Automatic expiration alerts</p>
-</div>
-<!-- Feature 5 -->
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 420px; top: 570px; width: 56px; height: 56px; background: #f0fdf4; border-radius: 12px; text-align: center; line-height: 56px; font-size: 24px; color: #0ea5e9; z-index: 10;">
-<i class="fas fa-chart-line"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 490px; top: 570px; width: 200px; height: 80px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 4px;">Analytics Dashboard</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b;">Real-time data insights</p>
-</div>
-<!-- Feature 6 -->
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 740px; top: 570px; width: 56px; height: 56px; background: #fef2f2; border-radius: 12px; text-align: center; line-height: 56px; font-size: 24px; color: #ef4444; z-index: 10;">
-<i class="fas fa-shield-alt"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 810px; top: 570px; width: 210px; height: 80px; z-index: 10;">
-<p style="font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 4px;">Security &amp; Privacy</p>
-<p style="font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b;">Role-based access control</p>
-</div>
-<!-- Bottom Info -->
-<div style="margin-top: auto; padding: 15px 80px; width: 100%;">
-<div style="display: flex; justify-content: space-between; align-items: center;">
-<div style="display: flex; align-items: center; gap: 8px;">
-<i class="fas fa-info-circle" style="color: #0ea5e9; font-size: 14px;"></i>
-<span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">Designed for humanitarian response coordination</span>
-</div>
-<div style="display: flex; align-items: center; gap: 16px;">
-<span style="font-family: 'Inter', sans-serif; font-size: 13px; color: #64748b;">Status: <span style="color: #22c55e; font-weight: 600;">Active Development</span></span>
-</div>
-</div>
-</div>
-</div>
-</body>
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <!-- Background Pattern -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 1280px;
+          height: 720px;
+          z-index: 1;
+        "
+      >
+        <svg height="720" style="opacity: 0.05" width="1280">
+          <pattern
+            height="40"
+            id="dots"
+            patternunits="userSpaceOnUse"
+            width="40"
+            x="0"
+            y="0"
+          >
+            <circle cx="2" cy="2" fill="#0ea5e9" r="2"></circle>
+          </pattern>
+          <rect fill="url(#dots)" height="100%" width="100%"></rect>
+        </svg>
+      </div>
+      <!-- Section Label -->
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 80px;
+          top: 60px;
+          width: 200px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #0ea5e9;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          "
+        >
+          The Solution
+        </p>
+      </div>
+      <!-- Main Title -->
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 80px;
+          top: 100px;
+          width: 1120px;
+          height: 130px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: #1e293b;
+            line-height: 1.2;
+            margin-bottom: 8px;
+          "
+        >
+          {projectName} —
+          <span style="color: #0ea5e9">Real-Time Needs Management System</span>
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 18px;
+            color: #64748b;
+            line-height: 1.5;
+          "
+        >
+          A platform that creates a
+          <span style="color: #f97316; font-weight: 600">trusted workflow</span>
+          for shelters to publish and update their needs during crises.
+        </p>
+      </div>
+      <!-- Core Definition Box -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 80px;
+          top: 260px;
+          width: 600px;
+          height: 190px;
+          background: #ffffff;
+          border-radius: 16px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+          z-index: 1;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 105px;
+          top: 285px;
+          width: 550px;
+          height: 140px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 16px;
+          "
+        >
+          <i
+            class="fas fa-check-circle"
+            style="color: #0ea5e9; margin-right: 8px"
+          ></i>
+          Core Definition
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 12px;
+          "
+        >
+          A platform that creates a
+          <span
+            style="
+              background: #dbeafe;
+              padding: 2px 6px;
+              border-radius: 4px;
+              color: #0ea5e9;
+              font-weight: 600;
+            "
+            >trusted workflow</span
+          >
+          for shelters to publish and update their needs during crises.
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 14px;
+            color: #64748b;
+            line-height: 1.5;
+          "
+        >
+          Built for
+          <span style="color: #f97316; font-weight: 500"
+            >low-connectivity, high-pressure</span
+          >
+          contexts with standardized, auditable processes.
+        </p>
+      </div>
+      <!-- Key Value Propositions -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 700px;
+          top: 260px;
+          width: 500px;
+          height: 190px;
+          background: #f0f9ff;
+          border-radius: 16px;
+          border: 1px solid #e2e8f0;
+          z-index: 1;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 725px;
+          top: 285px;
+          width: 450px;
+          height: 140px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 16px;
+          "
+        >
+          <i class="fas fa-star" style="color: #f97316; margin-right: 8px"></i>
+          Key Value Propositions
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <div
+              style="
+                width: 8px;
+                height: 8px;
+                background: #0ea5e9;
+                border-radius: 50%;
+              "
+            ></div>
+            <span
+              style="
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-size: 14px;
+                color: #475569;
+              "
+              >Standardized, auditable process</span
+            >
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px">
+            <div
+              style="
+                width: 8px;
+                height: 8px;
+                background: #0ea5e9;
+                border-radius: 50%;
+              "
+            ></div>
+            <span
+              style="
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-size: 14px;
+                color: #475569;
+              "
+              >Verified updates and roles</span
+            >
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px">
+            <div
+              style="
+                width: 8px;
+                height: 8px;
+                background: #0ea5e9;
+                border-radius: 50%;
+              "
+            ></div>
+            <span
+              style="
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-size: 14px;
+                color: #475569;
+              "
+              >Real-time public visibility</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Feature Grid -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 80px;
+          top: 445px;
+          width: 1120px;
+          height: 215px;
+          background: #ffffff;
+          border-radius: 16px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+          z-index: 1;
+        "
+      ></div>
+      <!-- Feature 1 -->
+      <div
+        data-object="true"
+        data-object-type="icon"
+        style="
+          position: absolute;
+          left: 110px;
+          top: 470px;
+          width: 56px;
+          height: 56px;
+          background: #f0f9ff;
+          border-radius: 12px;
+          text-align: center;
+          line-height: 56px;
+          font-size: 24px;
+          color: #0ea5e9;
+          z-index: 10;
+        "
+      >
+        <i class="fas fa-building"></i>
+      </div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 180px;
+          top: 470px;
+          width: 200px;
+          height: 80px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+          "
+        >
+          Crisis Management
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 13px;
+            color: #64748b;
+          "
+        >
+          Create and manage crisis events
+        </p>
+      </div>
+      <!-- Feature 2 -->
+      <div
+        data-object="true"
+        data-object-type="icon"
+        style="
+          position: absolute;
+          left: 420px;
+          top: 470px;
+          width: 56px;
+          height: 56px;
+          background: #fff7ed;
+          border-radius: 12px;
+          text-align: center;
+          line-height: 56px;
+          font-size: 24px;
+          color: #f97316;
+          z-index: 10;
+        "
+      >
+        <i class="fas fa-users"></i>
+      </div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 490px;
+          top: 470px;
+          width: 200px;
+          height: 80px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+          "
+        >
+          Verified Organizations
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 13px;
+            color: #64748b;
+          "
+        >
+          Trusted shelter accounts
+        </p>
+      </div>
+      <!-- Feature 3 -->
+      <div
+        data-object="true"
+        data-object-type="icon"
+        style="
+          position: absolute;
+          left: 740px;
+          top: 470px;
+          width: 56px;
+          height: 56px;
+          background: #fef3c7;
+          border-radius: 12px;
+          text-align: center;
+          line-height: 56px;
+          font-size: 24px;
+          color: #f59e0b;
+          z-index: 10;
+        "
+      >
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 810px;
+          top: 470px;
+          width: 210px;
+          height: 80px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+          "
+        >
+          Map Visualization
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 13px;
+            color: #64748b;
+          "
+        >
+          Real-time needs mapping
+        </p>
+      </div>
+      <!-- Feature 4 -->
+      <div
+        data-object="true"
+        data-object-type="icon"
+        style="
+          position: absolute;
+          left: 110px;
+          top: 570px;
+          width: 56px;
+          height: 56px;
+          background: #dcfce7;
+          border-radius: 12px;
+          text-align: center;
+          line-height: 56px;
+          font-size: 24px;
+          color: #22c55e;
+          z-index: 10;
+        "
+      >
+        <i class="fas fa-clock"></i>
+      </div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 180px;
+          top: 570px;
+          width: 200px;
+          height: 80px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+          "
+        >
+          Update Reminders
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 13px;
+            color: #64748b;
+          "
+        >
+          Automatic expiration alerts
+        </p>
+      </div>
+      <!-- Feature 5 -->
+      <div
+        data-object="true"
+        data-object-type="icon"
+        style="
+          position: absolute;
+          left: 420px;
+          top: 570px;
+          width: 56px;
+          height: 56px;
+          background: #f0fdf4;
+          border-radius: 12px;
+          text-align: center;
+          line-height: 56px;
+          font-size: 24px;
+          color: #0ea5e9;
+          z-index: 10;
+        "
+      >
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 490px;
+          top: 570px;
+          width: 200px;
+          height: 80px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+          "
+        >
+          Analytics Dashboard
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 13px;
+            color: #64748b;
+          "
+        >
+          Real-time data insights
+        </p>
+      </div>
+      <!-- Feature 6 -->
+      <div
+        data-object="true"
+        data-object-type="icon"
+        style="
+          position: absolute;
+          left: 740px;
+          top: 570px;
+          width: 56px;
+          height: 56px;
+          background: #fef2f2;
+          border-radius: 12px;
+          text-align: center;
+          line-height: 56px;
+          font-size: 24px;
+          color: #ef4444;
+          z-index: 10;
+        "
+      >
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 810px;
+          top: 570px;
+          width: 210px;
+          height: 80px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+          "
+        >
+          Security &amp; Privacy
+        </p>
+        <p
+          style="
+            font-family: &quot;Inter&quot;, sans-serif;
+            font-size: 13px;
+            color: #64748b;
+          "
+        >
+          Role-based access control
+        </p>
+      </div>
+      <!-- Bottom Info -->
+      <div style="margin-top: auto; padding: 15px 80px; width: 100%">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div style="display: flex; align-items: center; gap: 8px">
+            <i
+              class="fas fa-info-circle"
+              style="color: #0ea5e9; font-size: 14px"
+            ></i>
+            <span
+              style="
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-size: 14px;
+                color: #64748b;
+              "
+              >Designed for humanitarian response coordination</span
+            >
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px">
+            <span
+              style="
+                font-family: &quot;Inter&quot;, sans-serif;
+                font-size: 13px;
+                color: #64748b;
+              "
+              >Status:
+              <span style="color: #22c55e; font-weight: 600"
+                >Active Development</span
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
