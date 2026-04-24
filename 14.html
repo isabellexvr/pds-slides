@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>{projectName} - Innovation</title>
+    <title>{projectName} - Data Model</title>
     <link
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
       rel="stylesheet"
@@ -41,8 +41,6 @@
     <div class="slide-container">
       <!-- Background Pattern -->
       <div
-        data-object="true"
-        data-object-type="shape"
         style="
           position: absolute;
           left: 0px;
@@ -52,35 +50,40 @@
           z-index: 1;
         "
       >
-        <svg height="720" style="opacity: 0.05" width="1280">
-          <pattern
-            height="40"
-            id="dots"
-            patternunits="userSpaceOnUse"
-            width="40"
-            x="0"
-            y="0"
-          >
-            <circle cx="2" cy="2" fill="#0ea5e9" r="2"></circle>
-          </pattern>
-          <rect fill="url(#dots)" height="100%" width="100%"></rect>
+        <svg
+          height="720"
+          style="opacity: 0.03"
+          viewBox="0 0 1280 720"
+          width="1280"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              height="60"
+              id="gridPattern"
+              patternUnits="userSpaceOnUse"
+              width="60"
+            >
+              <circle cx="3" cy="3" fill="#0ea5e9" r="3"></circle>
+            </pattern>
+          </defs>
+          <rect fill="url(#gridPattern)" height="720" width="1280"></rect>
         </svg>
       </div>
+
       <!-- Section Label -->
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
           left: 80px;
           top: 60px;
-          width: 200px;
+          width: 400px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Inter&quot;, sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 14px;
             font-weight: 700;
             color: #0ea5e9;
@@ -88,57 +91,101 @@
             text-transform: uppercase;
           "
         >
-          Innovation
+          Data Model
         </p>
       </div>
-      <!-- Main Statement -->
+
+      <!-- Main Title -->
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
           left: 80px;
-          top: 100px;
+          top: 90px;
           width: 1120px;
-          height: 160px;
+          height: 60px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 42px;
-            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
             color: #1e293b;
             line-height: 1.2;
-            margin-bottom: 12px;
           "
         >
-          Information <span style="color: #0ea5e9">Governance</span> for
-          Humanitarian Response
-        </p>
-        <p
-          style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 18px;
-            color: #64748b;
-            line-height: 1.5;
-          "
-        >
-          Transforming scattered crisis data into a trusted, real-time source of
-          truth for disaster relief coordination.
+          Crises <span style="color: #94a3b8; font-weight: 500">→</span>
+          Shelters <span style="color: #94a3b8; font-weight: 500">→</span>
+          Resources
         </p>
       </div>
-      <!-- Key Innovation Grid -->
+
+      <!-- Subtitle -->
       <div
-        data-object="true"
-        data-object-type="shape"
         style="
           position: absolute;
           left: 80px;
-          top: 270px;
+          top: 148px;
           width: 1120px;
-          height: 380px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #64748b;
+            font-weight: 400;
+          "
+        >
+          Three entities wired to a single auditable flow — every field carries
+          an author, a timestamp, and a role.
+        </p>
+      </div>
+
+      <!-- Connector Arrows (between cards) -->
+      <div
+        style="
+          position: absolute;
+          left: 418px;
+          top: 370px;
+          width: 50px;
+          height: 24px;
+          z-index: 5;
+          text-align: center;
+          line-height: 24px;
+          font-size: 20px;
+          color: #cbd5e1;
+        "
+      >
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div
+        style="
+          position: absolute;
+          left: 808px;
+          top: 370px;
+          width: 50px;
+          height: 24px;
+          z-index: 5;
+          text-align: center;
+          line-height: 24px;
+          font-size: 20px;
+          color: #cbd5e1;
+        "
+      >
+        <i class="fas fa-chevron-right"></i>
+      </div>
+
+      <!-- ============ CARD 1: CRISES ============ -->
+      <div
+        style="
+          position: absolute;
+          left: 80px;
+          top: 200px;
+          width: 340px;
+          height: 440px;
           background: #ffffff;
           border-radius: 16px;
           border: 1px solid #e2e8f0;
@@ -146,348 +193,720 @@
           z-index: 1;
         "
       ></div>
-      <!-- Innovation 1: Workflow -->
+      <!-- Header band -->
       <div
-        data-object="true"
-        data-object-type="icon"
         style="
           position: absolute;
-          left: 120px;
-          top: 310px;
-          width: 80px;
-          height: 80px;
-          background: #f0f9ff;
-          border-radius: 12px;
+          left: 80px;
+          top: 200px;
+          width: 340px;
+          height: 90px;
+          background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+          border-radius: 16px 16px 0 0;
+          z-index: 2;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 104px;
+          top: 224px;
+          width: 44px;
+          height: 44px;
+          background: rgba(255, 255, 255, 0.18);
+          border-radius: 10px;
           text-align: center;
-          line-height: 80px;
-          font-size: 32px;
-          color: #0ea5e9;
+          line-height: 44px;
+          font-size: 20px;
+          color: #ffffff;
           z-index: 10;
         "
       >
-        <i class="fas fa-project-diagram"></i>
+        <i class="fas fa-triangle-exclamation"></i>
       </div>
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
-          left: 220px;
-          top: 310px;
-          width: 200px;
-          height: 100px;
+          left: 160px;
+          top: 224px;
+          width: 240px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
             font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 4px;
+            color: #ffffff;
+            margin-bottom: 2px;
           "
         >
-          Workflow
+          Crises
         </p>
         <p
           style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
-            color: #64748b;
-            line-height: 1.4;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.85);
           "
         >
-          Standardized, auditable process for updating shelter needs
+          The root event
         </p>
       </div>
-      <!-- Innovation 2: Trust -->
+
+      <!-- Role badge -->
       <div
-        data-object="true"
-        data-object-type="icon"
         style="
           position: absolute;
-          left: 440px;
-          top: 310px;
-          width: 80px;
-          height: 80px;
-          background: #fff7ed;
-          border-radius: 12px;
-          text-align: center;
-          line-height: 80px;
-          font-size: 32px;
-          color: #f97316;
+          left: 104px;
+          top: 308px;
           z-index: 10;
         "
       >
-        <i class="fas fa-shield-alt"></i>
-      </div>
-      <div
-        data-object="true"
-        data-object-type="textbox"
-        style="
-          position: absolute;
-          left: 540px;
-          top: 310px;
-          width: 200px;
-          height: 100px;
-          z-index: 10;
-        "
-      >
-        <p
+        <span
           style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 18px;
+            background: #fef2f2;
+            color: #dc2626;
+            font-family: 'Inter', sans-serif;
+            font-size: 10px;
             font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 4px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border: 1px solid #fecaca;
           "
+          >Master only</span
         >
-          Trust
-        </p>
-        <p
-          style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
-            color: #64748b;
-            line-height: 1.4;
-          "
-        >
-          Verified organizations with role-based access control
-        </p>
       </div>
-      <!-- Innovation 3: Real-time -->
+
+      <!-- Fields -->
       <div
-        data-object="true"
-        data-object-type="icon"
         style="
           position: absolute;
-          left: 760px;
-          top: 310px;
-          width: 80px;
-          height: 80px;
-          background: #fef3c7;
-          border-radius: 12px;
-          text-align: center;
-          line-height: 80px;
-          font-size: 32px;
-          color: #f59e0b;
+          left: 104px;
+          top: 348px;
+          width: 292px;
           z-index: 10;
         "
       >
-        <i class="fas fa-bolt"></i>
+        <div style="display: flex; align-items: flex-start; margin-bottom: 16px">
+          <i
+            class="fas fa-signature"
+            style="color: #ef4444; font-size: 13px; margin-top: 3px; width: 20px"
+          ></i>
+          <div style="flex: 1">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #1e293b;
+              "
+            >
+              Event name &amp; type
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                color: #64748b;
+                line-height: 1.4;
+              "
+            >
+              Flood, fire, landslide
+            </p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; margin-bottom: 16px">
+          <i
+            class="fas fa-location-dot"
+            style="color: #ef4444; font-size: 13px; margin-top: 3px; width: 20px"
+          ></i>
+          <div style="flex: 1">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #1e293b;
+              "
+            >
+              Affected area
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                color: #64748b;
+                line-height: 1.4;
+              "
+            >
+              Region, city, perimeter
+            </p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; margin-bottom: 16px">
+          <i
+            class="fas fa-gauge-high"
+            style="color: #ef4444; font-size: 13px; margin-top: 3px; width: 20px"
+          ></i>
+          <div style="flex: 1">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #1e293b;
+              "
+            >
+              Severity &amp; status
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                color: #64748b;
+                line-height: 1.4;
+              "
+            >
+              Active · contained · closed
+            </p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: flex-start">
+          <i
+            class="fas fa-clock"
+            style="color: #ef4444; font-size: 13px; margin-top: 3px; width: 20px"
+          ></i>
+          <div style="flex: 1">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #1e293b;
+              "
+            >
+              Lifecycle timestamps
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                color: #64748b;
+                line-height: 1.4;
+              "
+            >
+              Opened, updated, closed
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ CARD 2: SHELTERS ============ -->
+      <div
+        style="
+          position: absolute;
+          left: 470px;
+          top: 200px;
+          width: 340px;
+          height: 440px;
+          background: #ffffff;
+          border-radius: 16px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+          z-index: 1;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 470px;
+          top: 200px;
+          width: 340px;
+          height: 90px;
+          background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+          border-radius: 16px 16px 0 0;
+          z-index: 2;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 494px;
+          top: 224px;
+          width: 44px;
+          height: 44px;
+          background: rgba(255, 255, 255, 0.18);
+          border-radius: 10px;
+          text-align: center;
+          line-height: 44px;
+          font-size: 20px;
+          color: #ffffff;
+          z-index: 10;
+        "
+      >
+        <i class="fas fa-house-flood-water"></i>
       </div>
       <div
-        data-object="true"
-        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 550px;
+          top: 224px;
+          width: 240px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 2px;
+          "
+        >
+          Shelters
+        </p>
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.85);
+          "
+        >
+          Verified nodes on the ground
+        </p>
+      </div>
+
+      <div
+        style="
+          position: absolute;
+          left: 494px;
+          top: 308px;
+          z-index: 10;
+        "
+      >
+        <span
+          style="
+            background: #eff6ff;
+            color: #0284c7;
+            font-family: 'Inter', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border: 1px solid #bae6fd;
+          "
+          >Admin registers</span
+        >
+      </div>
+
+      <div
+        style="
+          position: absolute;
+          left: 494px;
+          top: 348px;
+          width: 292px;
+          z-index: 10;
+        "
+      >
+        <div style="display: flex; align-items: flex-start; margin-bottom: 16px">
+          <i
+            class="fas fa-id-card"
+            style="color: #0ea5e9; font-size: 13px; margin-top: 3px; width: 20px"
+          ></i>
+          <div style="flex: 1">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #1e293b;
+              "
+            >
+              Name, contact, address
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                color: #64748b;
+                line-height: 1.4;
+              "
+            >
+              Geo-coded, human-readable
+            </p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; margin-bottom: 16px">
+          <i
+            class="fas fa-users"
+            style="color: #0ea5e9; font-size: 13px; margin-top: 3px; width: 20px"
+          ></i>
+          <div style="flex: 1">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #1e293b;
+              "
+            >
+              Capacity &amp; occupancy
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                color: #64748b;
+                line-height: 1.4;
+              "
+            >
+              How many beds, how many in
+            </p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; margin-bottom: 16px">
+          <i
+            class="fas fa-plug-circle-bolt"
+            style="color: #0ea5e9; font-size: 13px; margin-top: 3px; width: 20px"
+          ></i>
+          <div style="flex: 1">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #1e293b;
+              "
+            >
+              Infrastructure flags
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                color: #64748b;
+                line-height: 1.4;
+              "
+            >
+              Power, water, connectivity
+            </p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: flex-start">
+          <i
+            class="fas fa-circle-check"
+            style="color: #0ea5e9; font-size: 13px; margin-top: 3px; width: 20px"
+          ></i>
+          <div style="flex: 1">
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #1e293b;
+              "
+            >
+              Verification status
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                color: #64748b;
+                line-height: 1.4;
+              "
+            >
+              Two-minute Master approval
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ CARD 3: RESOURCES ============ -->
+      <div
         style="
           position: absolute;
           left: 860px;
-          top: 310px;
-          width: 230px;
-          height: 100px;
-          z-index: 10;
+          top: 200px;
+          width: 340px;
+          height: 440px;
+          background: #ffffff;
+          border-radius: 16px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+          z-index: 1;
         "
-      >
-        <p
-          style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 4px;
-          "
-        >
-          Real-time updates
-        </p>
-        <p
-          style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
-            color: #64748b;
-            line-height: 1.4;
-          "
-        >
-          Instant validation and timestamping of needs updates
-        </p>
-      </div>
-      <!-- Innovation 4: Verified Data -->
+      ></div>
       <div
-        data-object="true"
-        data-object-type="icon"
         style="
           position: absolute;
-          left: 120px;
-          top: 460px;
-          width: 80px;
-          height: 80px;
-          background: #f0fdf4;
-          border-radius: 12px;
-          text-align: center;
-          line-height: 80px;
-          font-size: 32px;
-          color: #22c55e;
-          z-index: 10;
-        "
-      >
-        <i class="fas fa-check-double"></i>
-      </div>
-      <div
-        data-object="true"
-        data-object-type="textbox"
-        style="
-          position: absolute;
-          left: 220px;
-          top: 460px;
-          width: 200px;
-          height: 100px;
-          z-index: 10;
-        "
-      >
-        <p
-          style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 4px;
-          "
-        >
-          Verified data
-        </p>
-        <p
-          style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
-            color: #64748b;
-            line-height: 1.4;
-          "
-        >
-          Cross-checked information from multiple sources
-        </p>
-      </div>
-      <!-- Key Stats -->
-      <div
-        data-object="true"
-        data-object-type="textbox"
-        style="
-          position: absolute;
-          left: 560px;
-          top: 460px;
-          width: 520px;
+          left: 860px;
+          top: 200px;
+          width: 340px;
           height: 90px;
+          background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+          border-radius: 16px 16px 0 0;
+          z-index: 2;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 884px;
+          top: 224px;
+          width: 44px;
+          height: 44px;
+          background: rgba(255, 255, 255, 0.18);
+          border-radius: 10px;
+          text-align: center;
+          line-height: 44px;
+          font-size: 20px;
+          color: #ffffff;
           z-index: 10;
         "
       >
+        <i class="fas fa-box-open"></i>
+      </div>
+      <div
+        style="
+          position: absolute;
+          left: 940px;
+          top: 224px;
+          width: 240px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 2px;
+          "
+        >
+          Resources
+        </p>
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.85);
+          "
+        >
+          What each shelter needs now
+        </p>
+      </div>
+
+      <div
+        style="
+          position: absolute;
+          left: 884px;
+          top: 308px;
+          z-index: 10;
+        "
+      >
+        <span
+          style="
+            background: #f0fdf4;
+            color: #15803d;
+            font-family: 'Inter', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border: 1px solid #bbf7d0;
+          "
+          >Admin manages stock</span
+        >
+      </div>
+
+      <div
+        style="
+          position: absolute;
+          left: 884px;
+          top: 348px;
+          width: 292px;
+          z-index: 10;
+        "
+      >
+        <!-- General resources group -->
+        <div
+          style="
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 10px;
+            padding: 10px 12px;
+            margin-bottom: 12px;
+          "
+        >
+          <p
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 11px;
+              font-weight: 700;
+              color: #15803d;
+              letter-spacing: 0.6px;
+              text-transform: uppercase;
+              margin-bottom: 6px;
+            "
+          >
+            <i class="fas fa-repeat" style="margin-right: 4px"></i> General ·
+            auto-tracked
+          </p>
+          <p
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 12px;
+              color: #1e293b;
+              line-height: 1.5;
+            "
+          >
+            Food · water · blankets · mattresses
+          </p>
+        </div>
+
+        <!-- Specific resources group -->
+        <div
+          style="
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 10px;
+            padding: 10px 12px;
+            margin-bottom: 12px;
+          "
+        >
+          <p
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 11px;
+              font-weight: 700;
+              color: #b45309;
+              letter-spacing: 0.6px;
+              text-transform: uppercase;
+              margin-bottom: 6px;
+            "
+          >
+            <i class="fas fa-star" style="margin-right: 4px"></i> Specific · on
+            demand
+          </p>
+          <p
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 12px;
+              color: #1e293b;
+              line-height: 1.5;
+            "
+          >
+            Medication · hygiene kits · baby items · special needs
+          </p>
+        </div>
+
+        <!-- Priority note -->
+        <div style="display: flex; align-items: center; gap: 8px">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 4px;
+            "
+          >
+            <div
+              style="
+                width: 10px;
+                height: 10px;
+                background: #ef4444;
+                border-radius: 50%;
+              "
+            ></div>
+            <div
+              style="
+                width: 10px;
+                height: 10px;
+                background: #f59e0b;
+                border-radius: 50%;
+              "
+            ></div>
+            <div
+              style="
+                width: 10px;
+                height: 10px;
+                background: #22c55e;
+                border-radius: 50%;
+              "
+            ></div>
+          </div>
+          <p
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 11px;
+              color: #64748b;
+              font-weight: 500;
+            "
+          >
+            Priority: urgent · needed · sufficient
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Status -->
+      <div style="margin-top: auto; padding: 15px 80px; width: 100%">
         <div
           style="
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 16px;
-            background: #f8fafc;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            height: 56px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 15px;
           "
         >
-          <div style="text-align: center; flex: 1">
-            <p
+          <div style="display: flex; align-items: center; gap: 8px">
+            <i
+              class="fas fa-sitemap"
+              style="color: #0ea5e9; font-size: 14px"
+            ></i>
+            <span
               style="
-                font-family: &quot;Montserrat&quot;, sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                color: #0ea5e9;
-                margin-bottom: 2px;
-              "
-            >
-              95%
-            </p>
-            <p
-              style="
-                font-family: &quot;Inter&quot;, sans-serif;
-                font-size: 12px;
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
                 color: #64748b;
+                font-weight: 500;
               "
+              >Three roles act on this tree — Master opens crises, Admin runs
+              shelters and stock, Leitor watches the live picture.</span
             >
-              Data accuracy
-            </p>
           </div>
-          <div
-            style="
-              text-align: center;
-              flex: 1;
-              border-left: 1px solid #e2e8f0;
-              border-right: 1px solid #e2e8f0;
-            "
-          >
-            <p
+          <div style="display: flex; align-items: center; gap: 6px">
+            <div
               style="
-                font-family: &quot;Montserrat&quot;, sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                color: #f97316;
-                margin-bottom: 2px;
+                width: 8px;
+                height: 8px;
+                background: #10b981;
+                border-radius: 50%;
               "
-            >
-              2min
-            </p>
-            <p
+            ></div>
+            <span
               style="
-                font-family: &quot;Inter&quot;, sans-serif;
+                font-family: 'Inter', sans-serif;
                 font-size: 12px;
                 color: #64748b;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
               "
+              >Auditable</span
             >
-              Update time
-            </p>
-          </div>
-          <div style="text-align: center; flex: 1">
-            <p
-              style="
-                font-family: &quot;Montserrat&quot;, sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                color: #22c55e;
-                margin-bottom: 2px;
-              "
-            >
-              100%
-            </p>
-            <p
-              style="
-                font-family: &quot;Inter&quot;, sans-serif;
-                font-size: 12px;
-                color: #64748b;
-              "
-            >
-              Verification
-            </p>
           </div>
         </div>
-      </div>
-      <!-- Bottom Info -->
-      <div
-        style="
-          position: absolute;
-          left: 80px;
-          right: 80px;
-          bottom: 30px;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        "
-      >
-        <i class="fas fa-lightbulb" style="color: #0ea5e9; font-size: 14px"></i>
-        <span
-          style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
-            color: #64748b;
-          "
-          >Key innovation: Moving from data collection to information
-          governance</span
-        >
       </div>
     </div>
   </body>

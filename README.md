@@ -8,7 +8,7 @@
 
 ## Estrutura geral
 
-Roteiro cronometrado pra ~5min05s, deixando ~10s de folga dentro do limite do professor (5min15s). Dá pra gravar com uma voz só ou dividir entre integrantes do grupo.
+Roteiro cronometrado pra ~5min10s, deixando ~5s de folga dentro do limite do professor (5min15s). Dá pra gravar com uma voz só ou dividir entre integrantes do grupo.
 
 | Bloco | Slides | Tempo | Duração |
 |---|---|---|---|
@@ -17,12 +17,13 @@ Roteiro cronometrado pra ~5min05s, deixando ~10s de folga dentro do limite do pr
 | Recorte (Ishikawa) | 4–5 | 0:45 – 1:10 | 25s |
 | Problema específico | 6–7 | 1:10 – 1:40 | 30s |
 | Solução | 8–9 | 1:40 – 2:25 | 45s |
-| Funcionalidades | 10–11 | 2:25 – 3:00 | 35s |
-| UI Preview | 12 | 3:00 – 3:20 | 20s |
-| Usuários / personas | 13 | 3:20 – 3:50 | 30s |
-| Inovação | 14 | 3:50 – 4:25 | 35s |
-| Impacto / MVP | 15 | 4:25 – 4:45 | 20s |
-| Fechamento | 16 | 4:45 – 5:05 | 20s |
+| Funcionalidades | 10–11 | 2:25 – 2:45 | 20s |
+| UI Preview | 12 | 2:45 – 3:05 | 20s |
+| Usuários / personas | 13 | 3:05 – 3:30 | 25s |
+| Modelo de dados | 14 | 3:30 – 3:55 | 25s |
+| Inovação | 15 | 3:55 – 4:30 | 35s |
+| Impacto / MVP | 16 | 4:30 – 4:50 | 20s |
+| Fechamento | 17 | 4:50 – 5:10 | 20s |
 
 ---
 
@@ -48,27 +49,31 @@ Roteiro cronometrado pra ~5min05s, deixando ~10s de folga dentro do limite do pr
 
 > "A nossa proposta é o **{projectName}** — uma plataforma de *governança da informação* pra resposta humanitária. Não é mais uma ferramenta de doação. Não é um marketplace. É o lugar onde a necessidade do abrigo vira um dado confiável, carimbado, com hora e responsável. Abrigos verificados publicam o que precisam; atualizam em tempo real; e qualquer pessoa — doador, ONG, Defesa Civil — vê a mesma verdade, ao mesmo tempo."
 
-### [Slides 10–11 — Funcionalidades | 2:25–3:00]
+### [Slides 10–11 — Funcionalidades | 2:25–2:45]
 
-> "As seis funcionalidades principais: **gestão de crises** com ciclo de vida definido, **contas verificadas** com controle de acesso por papel, **dashboard em tempo real**, **sistema de prioridades** — urgente, necessário, suficiente — com código de cor, **lembretes automáticos** de expiração, e **visualização em mapa** geo-referenciada. Tudo pensado pra funcionar em contexto de baixa conectividade — celular básico, conexão intermitente."
+> "Seis funcionalidades-chave: **gestão de crises**, **contas verificadas**, **dashboard em tempo real**, **prioridades** — urgente, necessário, suficiente — com código de cor, **lembretes de expiração** e **mapa georreferenciado**. Tudo pensado pra baixa conectividade."
 
-### [Slide 12 — UI Preview | 3:00–3:20]
+### [Slide 12 — UI Preview | 2:45–3:05]
 
 > "E na prática, é isso que todo mundo enxerga: um mapa com os abrigos marcados por prioridade — vermelho pra urgente, laranja pra necessário, verde pra suficiente — e um feed que atualiza em tempo real, mostrando quem publicou, quando publicou, e o quê."
 
-### [Slide 13 — Usuários / personas | 3:20–3:50]
+### [Slide 13 — Usuários / personas | 3:05–3:30]
 
-> "Quem usa? Como usuários principais: a **Defesa Civil** abre as crises e coordena; **ONGs e abrigos** publicam e atualizam necessidades. Como apoio: **doadores** e **provedores de logística** enxergam tudo em tempo real. E — o nosso diferencial — **órgãos de controle** como Ministério Público, TCU e CGU, que auditam o fluxo decisório. Toda atualização fica registrada, com autor e carimbo de tempo — porque governança da informação só funciona se for auditável."
+> "Quem usa? A gente modela três papéis. **Master**, a Defesa Civil, abre e fecha as crises. **Admin**, ONGs e responsáveis por abrigos, cadastram seu abrigo e atualizam o estoque. **Leitor**, que é o doador, o logístico e — o nosso diferencial — **órgãos de controle**: Ministério Público, TCU, CGU. Toda atualização fica registrada, com autor e carimbo de tempo — porque governança da informação só funciona se for auditável."
 
-### [Slide 14 — Inovação | 3:50–4:25]
+### [Slide 14 — Modelo de dados | 3:30–3:55]
+
+> "E como isso se organiza por trás? Três entidades, uma hierarquia simples. **Crises** — só o Master abre, com tipo, área afetada e ciclo de vida. Dentro de uma crise vivem os **Abrigos**, verificados em dois minutos, com capacidade, ocupação e infraestrutura. E dentro de cada abrigo, os **Recursos** — gerais, como comida e água, que o sistema monitora automaticamente; e específicos, como medicamento e item especial, que o abrigo pede sob demanda, com prioridade."
+
+### [Slide 15 — Inovação | 3:55–4:30]
 
 > "Duas coisas nos tornam diferentes. Primeiro, a gente muda o paradigma: de *coleta de dados* pra *governança da informação* — workflow auditável, verificado em dois minutos, uma única fonte de verdade. Segundo, e esse é o pulo do gato pra contexto de crise: **funciona offline**. A gente construiu como PWA, então o voluntário atualiza a necessidade do abrigo mesmo sem sinal, e o app sincroniza sozinho quando a conexão volta. Sem app store, sem instalação — o link vira ícone no celular. É a diferença entre o caminhão chegar no abrigo certo ou girar três dias procurando quem precisa."
 
-### [Slide 15 — Impacto / MVP | 4:25–4:45]
+### [Slide 16 — Impacto / MVP | 4:30–4:50]
 
 > "Nosso escopo pros próximos meses é entregar um MVP funcional: cadastro e verificação de abrigos, publicação de necessidades em tempo real, dashboard público e mapa. Stack leve, offline-first, pensada pra rodar em qualquer lugar — inclusive em prefeitura de cidade pequena."
 
-### [Slide 16 — Fechamento | 4:45–5:05]
+### [Slide 17 — Fechamento | 4:50–5:10]
 
 > "Desastre vai continuar acontecendo. A gente não pode mudar isso. Mas a gente pode mudar a chance de a ajuda chegar na hora certa, no lugar certo, pra quem realmente precisa. Esse é o {projectName}. Obrigada."
 
@@ -76,7 +81,7 @@ Roteiro cronometrado pra ~5min05s, deixando ~10s de folga dentro do limite do pr
 
 ## Dicas de execução
 
-- **Ensaiem com cronômetro** antes de gravar. Se bater acima de 5:00, o primeiro corte deve ser no bloco Ishikawa (slides 4–5) — dá pra resumir em uma frase só.
+- **Ensaiem com cronômetro** antes de gravar. Se bater acima de 5:00, o primeiro corte deve ser no bloco Ishikawa (slides 4–5) — dá pra resumir em uma frase só. O segundo corte vai no Modelo de dados (slide 14): dá pra tirar o detalhe de "geral vs específico" e deixar só o "três entidades, uma hierarquia".
 - **Não corram na abertura e no fechamento.** São os blocos de maior impacto.
 - **Áudio > vídeo.** Se puderem, gravem o áudio separado com fone/microfone decente. Áudio de notebook fica ruim.
 - **Luz natural** de janela, de dia, é melhor do que qualquer iluminação artificial improvisada.
