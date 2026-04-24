@@ -8,7 +8,7 @@
 
 ## Estrutura geral
 
-Roteiro cronometrado pra ~5min, deixando ~15s de folga dentro do limite do professor (5min15s). Dá pra gravar com uma voz só ou dividir entre integrantes do grupo.
+Roteiro cronometrado pra ~5min05s, deixando ~10s de folga dentro do limite do professor (5min15s). Dá pra gravar com uma voz só ou dividir entre integrantes do grupo.
 
 | Bloco | Slides | Tempo | Duração |
 |---|---|---|---|
@@ -20,9 +20,9 @@ Roteiro cronometrado pra ~5min, deixando ~15s de folga dentro do limite do profe
 | Funcionalidades | 10–11 | 2:25 – 3:00 | 35s |
 | UI Preview | 12 | 3:00 – 3:20 | 20s |
 | Usuários / personas | 13 | 3:20 – 3:50 | 30s |
-| Inovação | 14 | 3:50 – 4:20 | 30s |
-| Impacto / MVP | 15 | 4:20 – 4:40 | 20s |
-| Fechamento | 16 | 4:40 – 5:00 | 20s |
+| Inovação | 14 | 3:50 – 4:25 | 35s |
+| Impacto / MVP | 15 | 4:25 – 4:45 | 20s |
+| Fechamento | 16 | 4:45 – 5:05 | 20s |
 
 ---
 
@@ -60,15 +60,15 @@ Roteiro cronometrado pra ~5min, deixando ~15s de folga dentro do limite do profe
 
 > "Quem usa? Como usuários principais: a **Defesa Civil** abre as crises e coordena; **ONGs e abrigos** publicam e atualizam necessidades. Como apoio: **doadores** e **provedores de logística** enxergam tudo em tempo real. E — o nosso diferencial — **órgãos de controle** como Ministério Público, TCU e CGU, que auditam o fluxo decisório. Toda atualização fica registrada, com autor e carimbo de tempo — porque governança da informação só funciona se for auditável."
 
-### [Slide 14 — Inovação | 3:50–4:20]
+### [Slide 14 — Inovação | 3:50–4:25]
 
-> "O que torna isso diferente? A gente não está inventando uma planilha bonita. A gente está mudando o paradigma: de *coleta de dados* pra *governança da informação*. Workflow padronizado e auditável, atualizações verificadas em até dois minutos, e uma única fonte de verdade. Na prática, é a diferença entre o caminhão de doação chegar no abrigo certo ou girar três dias procurando quem precisa."
+> "Duas coisas nos tornam diferentes. Primeiro, a gente muda o paradigma: de *coleta de dados* pra *governança da informação* — workflow auditável, verificado em dois minutos, uma única fonte de verdade. Segundo, e esse é o pulo do gato pra contexto de crise: **funciona offline**. A gente construiu como PWA, então o voluntário atualiza a necessidade do abrigo mesmo sem sinal, e o app sincroniza sozinho quando a conexão volta. Sem app store, sem instalação — o link vira ícone no celular. É a diferença entre o caminhão chegar no abrigo certo ou girar três dias procurando quem precisa."
 
-### [Slide 15 — Impacto / MVP | 4:20–4:40]
+### [Slide 15 — Impacto / MVP | 4:25–4:45]
 
-> "Nosso escopo pros próximos meses é entregar um MVP funcional: cadastro e verificação de abrigos, publicação de necessidades em tempo real, dashboard público e mapa. Stack leve, pensada pra rodar em qualquer lugar — inclusive em prefeitura de cidade pequena."
+> "Nosso escopo pros próximos meses é entregar um MVP funcional: cadastro e verificação de abrigos, publicação de necessidades em tempo real, dashboard público e mapa. Stack leve, offline-first, pensada pra rodar em qualquer lugar — inclusive em prefeitura de cidade pequena."
 
-### [Slide 16 — Fechamento | 4:40–5:00]
+### [Slide 16 — Fechamento | 4:45–5:05]
 
 > "Desastre vai continuar acontecendo. A gente não pode mudar isso. Mas a gente pode mudar a chance de a ajuda chegar na hora certa, no lugar certo, pra quem realmente precisa. Esse é o {projectName}. Obrigada."
 
