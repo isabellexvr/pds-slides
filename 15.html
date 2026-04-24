@@ -41,8 +41,6 @@
     <div class="slide-container">
       <!-- Background Pattern -->
       <div
-        data-object="true"
-        data-object-type="shape"
         style="
           position: absolute;
           left: 0px;
@@ -52,35 +50,40 @@
           z-index: 1;
         "
       >
-        <svg height="720" style="opacity: 0.05" width="1280">
-          <pattern
-            height="40"
-            id="dots"
-            patternunits="userSpaceOnUse"
-            width="40"
-            x="0"
-            y="0"
-          >
-            <circle cx="2" cy="2" fill="#0ea5e9" r="2"></circle>
-          </pattern>
-          <rect fill="url(#dots)" height="100%" width="100%"></rect>
+        <svg
+          height="720"
+          style="opacity: 0.04"
+          viewBox="0 0 1280 720"
+          width="1280"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              height="40"
+              id="dots"
+              patternUnits="userSpaceOnUse"
+              width="40"
+            >
+              <circle cx="2" cy="2" fill="#0ea5e9" r="2"></circle>
+            </pattern>
+          </defs>
+          <rect fill="url(#dots)" height="720" width="1280"></rect>
         </svg>
       </div>
+
       <!-- Section Label -->
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
           left: 80px;
           top: 60px;
-          width: 200px;
+          width: 300px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Inter&quot;, sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 14px;
             font-weight: 700;
             color: #0ea5e9;
@@ -91,381 +94,604 @@
           Innovation
         </p>
       </div>
+
       <!-- Main Statement -->
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
           left: 80px;
-          top: 100px;
+          top: 90px;
           width: 1120px;
-          height: 160px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 42px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
             font-weight: 800;
             color: #1e293b;
-            line-height: 1.2;
-            margin-bottom: 12px;
+            line-height: 1.15;
+            margin-bottom: 10px;
           "
         >
-          Information <span style="color: #0ea5e9">Governance</span> for
-          Humanitarian Response
+          Built for the <span style="color: #0ea5e9">field</span>, not the office
         </p>
         <p
           style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
             color: #64748b;
             line-height: 1.5;
           "
         >
-          Transforming scattered crisis data into a trusted, real-time source of
-          truth for disaster relief coordination.
+          Three pillars — and three compounding ideas — that let the system hold
+          up in a real crisis.
         </p>
       </div>
-      <!-- Key Innovation Grid -->
+
+      <!-- ============ HERO ROW: 3 PILLARS ============ -->
+
+      <!-- Pillar 1: Workflow -->
       <div
-        data-object="true"
-        data-object-type="shape"
         style="
           position: absolute;
           left: 80px;
-          top: 270px;
-          width: 1120px;
-          height: 380px;
+          top: 210px;
+          width: 346px;
+          height: 230px;
           background: #ffffff;
           border-radius: 16px;
           border: 1px solid #e2e8f0;
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-          z-index: 1;
+          overflow: hidden;
+          z-index: 2;
         "
       ></div>
-      <!-- Innovation 1: Workflow -->
       <div
-        data-object="true"
-        data-object-type="icon"
         style="
           position: absolute;
-          left: 120px;
-          top: 310px;
-          width: 80px;
-          height: 80px;
-          background: #f0f9ff;
-          border-radius: 12px;
+          left: 80px;
+          top: 210px;
+          width: 346px;
+          height: 6px;
+          background: #0ea5e9;
+          z-index: 3;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 104px;
+          top: 232px;
+          width: 56px;
+          height: 56px;
+          background: #e0f2fe;
+          border-radius: 14px;
           text-align: center;
-          line-height: 80px;
-          font-size: 32px;
+          line-height: 56px;
+          font-size: 24px;
           color: #0ea5e9;
           z-index: 10;
         "
       >
-        <i class="fas fa-project-diagram"></i>
+        <i class="fas fa-diagram-project"></i>
       </div>
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
-          left: 220px;
-          top: 310px;
-          width: 200px;
-          height: 100px;
+          left: 330px;
+          top: 232px;
+          z-index: 10;
+        "
+      >
+        <span
+          style="
+            background: #f1f5f9;
+            color: #64748b;
+            font-family: 'Inter', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+          "
+          >01</span
+        >
+      </div>
+      <div
+        style="
+          position: absolute;
+          left: 104px;
+          top: 308px;
+          width: 298px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
             font-weight: 700;
             color: #1e293b;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
           "
         >
           Workflow
         </p>
         <p
           style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
-            color: #64748b;
-            line-height: 1.4;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #0ea5e9;
+            font-weight: 600;
+            margin-bottom: 10px;
           "
         >
-          Standardized, auditable process for updating shelter needs
+          From data collection to governance
+        </p>
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.5;
+          "
+        >
+          Every update carries author, timestamp and reason. An auditable event
+          log — not a soup of spreadsheets.
         </p>
       </div>
-      <!-- Innovation 2: Trust -->
+
+      <!-- Pillar 2: Trust -->
       <div
-        data-object="true"
-        data-object-type="icon"
         style="
           position: absolute;
-          left: 440px;
-          top: 310px;
-          width: 80px;
-          height: 80px;
+          left: 467px;
+          top: 210px;
+          width: 346px;
+          height: 230px;
+          background: #ffffff;
+          border-radius: 16px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+          overflow: hidden;
+          z-index: 2;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 467px;
+          top: 210px;
+          width: 346px;
+          height: 6px;
+          background: #f97316;
+          z-index: 3;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 491px;
+          top: 232px;
+          width: 56px;
+          height: 56px;
           background: #fff7ed;
-          border-radius: 12px;
+          border-radius: 14px;
           text-align: center;
-          line-height: 80px;
-          font-size: 32px;
+          line-height: 56px;
+          font-size: 24px;
           color: #f97316;
           z-index: 10;
         "
       >
-        <i class="fas fa-shield-alt"></i>
+        <i class="fas fa-shield-halved"></i>
       </div>
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
-          left: 540px;
-          top: 310px;
-          width: 200px;
-          height: 100px;
+          left: 717px;
+          top: 232px;
+          z-index: 10;
+        "
+      >
+        <span
+          style="
+            background: #f1f5f9;
+            color: #64748b;
+            font-family: 'Inter', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+          "
+          >02</span
+        >
+      </div>
+      <div
+        style="
+          position: absolute;
+          left: 491px;
+          top: 308px;
+          width: 298px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
             font-weight: 700;
             color: #1e293b;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
           "
         >
           Trust
         </p>
         <p
           style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
-            color: #64748b;
-            line-height: 1.4;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #f97316;
+            font-weight: 600;
+            margin-bottom: 10px;
           "
         >
-          Verified organizations with role-based access control
+          Verified by construction
+        </p>
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.5;
+          "
+        >
+          Two-minute institutional check to publish. Oversight agencies — MP,
+          TCU, CGU — are first-class readers, not afterthoughts.
         </p>
       </div>
-      <!-- Innovation 3: Real-time -->
+
+      <!-- Pillar 3: PWA / Offline -->
       <div
-        data-object="true"
-        data-object-type="icon"
         style="
           position: absolute;
-          left: 760px;
-          top: 310px;
-          width: 80px;
-          height: 80px;
-          background: #fef3c7;
-          border-radius: 12px;
+          left: 854px;
+          top: 210px;
+          width: 346px;
+          height: 230px;
+          background: #ffffff;
+          border-radius: 16px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+          overflow: hidden;
+          z-index: 2;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 854px;
+          top: 210px;
+          width: 346px;
+          height: 6px;
+          background: #7c3aed;
+          z-index: 3;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 878px;
+          top: 232px;
+          width: 56px;
+          height: 56px;
+          background: #ede9fe;
+          border-radius: 14px;
           text-align: center;
-          line-height: 80px;
-          font-size: 32px;
+          line-height: 56px;
+          font-size: 24px;
+          color: #7c3aed;
+          z-index: 10;
+        "
+      >
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div
+        style="
+          position: absolute;
+          left: 1104px;
+          top: 232px;
+          z-index: 10;
+        "
+      >
+        <span
+          style="
+            background: #f1f5f9;
+            color: #64748b;
+            font-family: 'Inter', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+          "
+          >03</span
+        >
+      </div>
+      <div
+        style="
+          position: absolute;
+          left: 878px;
+          top: 308px;
+          width: 298px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 6px;
+          "
+        >
+          Offline-first PWA
+        </p>
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #7c3aed;
+            font-weight: 600;
+            margin-bottom: 10px;
+          "
+        >
+          Works without a signal
+        </p>
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.5;
+          "
+        >
+          Volunteers update shelter needs even with no connection; the app
+          reconciles on its own when the link returns.
+        </p>
+      </div>
+
+      <!-- ============ COMPOUND ROW: 3 SUPPORTING IDEAS ============ -->
+
+      <!-- Section mini-label -->
+      <div
+        style="
+          position: absolute;
+          left: 80px;
+          top: 466px;
+          z-index: 10;
+        "
+      >
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            color: #94a3b8;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          "
+        >
+          <i
+            class="fas fa-plus"
+            style="margin-right: 6px; font-size: 10px"
+          ></i>
+          Compounding innovations
+        </p>
+      </div>
+
+      <!-- Compound 1: Whole-picture sync -->
+      <div
+        style="
+          position: absolute;
+          left: 80px;
+          top: 496px;
+          width: 346px;
+          height: 130px;
+          background: #ffffff;
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          z-index: 2;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 100px;
+          top: 516px;
+          width: 42px;
+          height: 42px;
+          background: #fef3c7;
+          border-radius: 10px;
+          text-align: center;
+          line-height: 42px;
+          font-size: 18px;
           color: #f59e0b;
           z-index: 10;
         "
       >
-        <i class="fas fa-bolt"></i>
+        <i class="fas fa-circle-nodes"></i>
       </div>
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
-          left: 860px;
-          top: 310px;
-          width: 230px;
-          height: 100px;
+          left: 154px;
+          top: 512px;
+          width: 252px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
             font-weight: 700;
             color: #1e293b;
             margin-bottom: 4px;
           "
         >
-          Real-time updates
+          Whole-picture sync
         </p>
         <p
           style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
             color: #64748b;
-            line-height: 1.4;
+            line-height: 1.45;
           "
         >
-          Instant validation and timestamping of needs updates
+          Every shelter pushes what it can, when it can. The whole network keeps
+          converging into one fresh, unified view.
         </p>
       </div>
-      <!-- Innovation 4: Verified Data -->
+
+      <!-- Compound 2: Single source of truth -->
       <div
-        data-object="true"
-        data-object-type="icon"
         style="
           position: absolute;
-          left: 120px;
-          top: 460px;
-          width: 80px;
-          height: 80px;
-          background: #f0fdf4;
+          left: 467px;
+          top: 496px;
+          width: 346px;
+          height: 130px;
+          background: #ffffff;
           border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          z-index: 2;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 487px;
+          top: 516px;
+          width: 42px;
+          height: 42px;
+          background: #f0fdf4;
+          border-radius: 10px;
           text-align: center;
-          line-height: 80px;
-          font-size: 32px;
+          line-height: 42px;
+          font-size: 18px;
           color: #22c55e;
           z-index: 10;
         "
       >
-        <i class="fas fa-check-double"></i>
+        <i class="fas fa-eye"></i>
       </div>
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
-          left: 220px;
-          top: 460px;
-          width: 200px;
-          height: 100px;
+          left: 541px;
+          top: 512px;
+          width: 252px;
           z-index: 10;
         "
       >
         <p
           style="
-            font-family: &quot;Montserrat&quot;, sans-serif;
-            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
             font-weight: 700;
             color: #1e293b;
             margin-bottom: 4px;
           "
         >
-          Verified data
+          Single source of truth
         </p>
         <p
           style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
             color: #64748b;
-            line-height: 1.4;
+            line-height: 1.45;
           "
         >
-          Cross-checked information from multiple sources
+          Public read, authenticated write. Shelter, NGO, donor and auditor see
+          the same live picture at the same time.
         </p>
       </div>
-      <!-- Key Stats -->
+
+      <!-- Compound 3: Zero-install -->
       <div
-        data-object="true"
-        data-object-type="textbox"
         style="
           position: absolute;
-          left: 560px;
-          top: 460px;
-          width: 520px;
-          height: 90px;
+          left: 854px;
+          top: 496px;
+          width: 346px;
+          height: 130px;
+          background: #ffffff;
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          z-index: 2;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          left: 874px;
+          top: 516px;
+          width: 42px;
+          height: 42px;
+          background: #ecfeff;
+          border-radius: 10px;
+          text-align: center;
+          line-height: 42px;
+          font-size: 18px;
+          color: #06b6d4;
           z-index: 10;
         "
       >
-        <div
+        <i class="fas fa-mobile-screen"></i>
+      </div>
+      <div
+        style="
+          position: absolute;
+          left: 928px;
+          top: 512px;
+          width: 252px;
+          z-index: 10;
+        "
+      >
+        <p
           style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px;
-            background: #f8fafc;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            height: 56px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 4px;
           "
         >
-          <div style="text-align: center; flex: 1">
-            <p
-              style="
-                font-family: &quot;Montserrat&quot;, sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                color: #0ea5e9;
-                margin-bottom: 2px;
-              "
-            >
-              95%
-            </p>
-            <p
-              style="
-                font-family: &quot;Inter&quot;, sans-serif;
-                font-size: 12px;
-                color: #64748b;
-              "
-            >
-              Data accuracy
-            </p>
-          </div>
-          <div
-            style="
-              text-align: center;
-              flex: 1;
-              border-left: 1px solid #e2e8f0;
-              border-right: 1px solid #e2e8f0;
-            "
-          >
-            <p
-              style="
-                font-family: &quot;Montserrat&quot;, sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                color: #f97316;
-                margin-bottom: 2px;
-              "
-            >
-              2min
-            </p>
-            <p
-              style="
-                font-family: &quot;Inter&quot;, sans-serif;
-                font-size: 12px;
-                color: #64748b;
-              "
-            >
-              Update time
-            </p>
-          </div>
-          <div style="text-align: center; flex: 1">
-            <p
-              style="
-                font-family: &quot;Montserrat&quot;, sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                color: #22c55e;
-                margin-bottom: 2px;
-              "
-            >
-              100%
-            </p>
-            <p
-              style="
-                font-family: &quot;Inter&quot;, sans-serif;
-                font-size: 12px;
-                color: #64748b;
-              "
-            >
-              Verification
-            </p>
-          </div>
-        </div>
+          Zero-install, zero-training
+        </p>
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: #64748b;
+            line-height: 1.45;
+          "
+        >
+          The link turns into an app icon. No app store, no IT team, no
+          onboarding for the volunteer on the ground.
+        </p>
       </div>
+
       <!-- Bottom Info -->
       <div
         style="
@@ -475,19 +701,47 @@
           bottom: 30px;
           display: flex;
           align-items: center;
+          justify-content: space-between;
           gap: 8px;
         "
       >
-        <i class="fas fa-lightbulb" style="color: #0ea5e9; font-size: 14px"></i>
-        <span
-          style="
-            font-family: &quot;Inter&quot;, sans-serif;
-            font-size: 14px;
-            color: #64748b;
-          "
-          >Key innovation: Moving from data collection to information
-          governance</span
-        >
+        <div style="display: flex; align-items: center; gap: 8px">
+          <i
+            class="fas fa-lightbulb"
+            style="color: #0ea5e9; font-size: 14px"
+          ></i>
+          <span
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 13px;
+              color: #64748b;
+              font-weight: 500;
+            "
+            >From data collection to information governance — online, offline,
+            and accountable.</span
+          >
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px">
+          <div
+            style="
+              width: 8px;
+              height: 8px;
+              background: #10b981;
+              border-radius: 50%;
+            "
+          ></div>
+          <span
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 12px;
+              color: #64748b;
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+            "
+            >Field-ready</span
+          >
+        </div>
       </div>
     </div>
   </body>

@@ -59,15 +59,15 @@ Roteiro cronometrado pra ~5min10s, deixando ~5s de folga dentro do limite do pro
 
 ### [Slide 13 — Usuários / personas | 3:05–3:30]
 
-> "Quem usa? A gente modela três papéis. **Master**, a Defesa Civil, abre e fecha as crises. **Admin**, ONGs e responsáveis por abrigos, cadastram seu abrigo e atualizam o estoque. **Leitor**, que é o doador, o logístico e — o nosso diferencial — **órgãos de controle**: Ministério Público, TCU, CGU. Toda atualização fica registrada, com autor e carimbo de tempo — porque governança da informação só funciona se for auditável."
+> "Quem usa? A gente modela três papéis. **Master**, a Defesa Civil, abre e fecha as crises e concede selo de verificação para abrigos. **Admin**, ONGs e responsáveis por abrigos, cadastram seu abrigo e atualizam o estoque. **Leitor**, que é o doador, o logístico e — o nosso diferencial — **órgãos de controle**: Ministério Público, TCU, CGU. Toda atualização fica registrada, com autor e carimbo de tempo — porque governança da informação só funciona se for auditável."
 
 ### [Slide 14 — Modelo de dados | 3:30–3:55]
 
-> "E como isso se organiza por trás? Três entidades, uma hierarquia simples. **Crises** — só o Master abre, com tipo, área afetada e ciclo de vida. Dentro de uma crise vivem os **Abrigos**, verificados em dois minutos, com capacidade, ocupação e infraestrutura. E dentro de cada abrigo, os **Recursos** — gerais, como comida e água, que o sistema monitora automaticamente; e específicos, como medicamento e item especial, que o abrigo pede sob demanda, com prioridade."
+> "E como isso se organiza por trás? Três entidades, uma hierarquia simples. **Crises** — só o Master abre, com tipo, área afetada e ciclo de vida. Dentro de uma crise vivem os **Abrigos**, verificados em duas etapas, com capacidade, ocupação e infraestrutura. E dentro de cada abrigo, os **Recursos** — gerais, como comida e água, que o sistema monitora automaticamente; e específicos, como medicamento e item especial, que o abrigo pede sob demanda, com prioridade."
 
 ### [Slide 15 — Inovação | 3:55–4:30]
 
-> "Duas coisas nos tornam diferentes. Primeiro, a gente muda o paradigma: de *coleta de dados* pra *governança da informação* — workflow auditável, verificado em dois minutos, uma única fonte de verdade. Segundo, e esse é o pulo do gato pra contexto de crise: **funciona offline**. A gente construiu como PWA, então o voluntário atualiza a necessidade do abrigo mesmo sem sinal, e o app sincroniza sozinho quando a conexão volta. Sem app store, sem instalação — o link vira ícone no celular. É a diferença entre o caminhão chegar no abrigo certo ou girar três dias procurando quem precisa."
+> "A inovação tá em três pilares. **Workflow**: cada atualização carrega autor, hora e razão — governança da informação, não planilha solta. **Trust**: quem publica é verificado em duas etapas, e MP, TCU e CGU são leitores nativos, não favor. **Offline-first**: PWA com sync idempotente — o voluntário atualiza sem sinal, o sistema reconcilia quando a conexão volta. Sem app store, sem treinamento. E por cima, três extras que compõem: uma visão do todo que sincroniza quando dá, uma fonte de verdade pública, e zero instalação. É o que faz o caminhão chegar no abrigo certo — em vez de girar três dias procurando quem precisa."
 
 ### [Slide 16 — Impacto / MVP | 4:30–4:50]
 
@@ -81,7 +81,7 @@ Roteiro cronometrado pra ~5min10s, deixando ~5s de folga dentro do limite do pro
 
 ## Dicas de execução
 
-- **Ensaiem com cronômetro** antes de gravar. Se bater acima de 5:00, o primeiro corte deve ser no bloco Ishikawa (slides 4–5) — dá pra resumir em uma frase só. O segundo corte vai no Modelo de dados (slide 14): dá pra tirar o detalhe de "geral vs específico" e deixar só o "três entidades, uma hierarquia".
+- **Ensaiem com cronômetro** antes de gravar. Se bater acima de 5:00, o primeiro corte vai no Ishikawa (slides 4–5) — dá pra resumir em uma frase. Segundo corte, no Modelo de dados (14), tirar o "geral vs específico" e deixar só "três entidades, uma hierarquia". Terceiro, na Inovação (15), cortar os três extras e manter só os pilares Workflow · Trust · Offline-first.
 - **Não corram na abertura e no fechamento.** São os blocos de maior impacto.
 - **Áudio > vídeo.** Se puderem, gravem o áudio separado com fone/microfone decente. Áudio de notebook fica ruim.
 - **Luz natural** de janela, de dia, é melhor do que qualquer iluminação artificial improvisada.
